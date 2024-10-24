@@ -1,0 +1,40 @@
+<!-- Alumni Highlight -->
+
+<div class ="section-title text-center">
+   <h2>Alumni Highlight</h2>
+   <div class = "underline" ></div>
+</div>
+
+<div class = "row mt-4 mb-4">
+    {% for alumni in DataAlumni %}
+  <div class = "col-lg-6 mt-4">
+  <div class = "alumni-highlight d-flex align-items-start"">
+    <div class = "container">
+      <div class = "section-title">          
+        <div class = "row">
+          <div class = "col-lg- mt-4" >
+            <div class = "member d-flex align-item-start">
+              <div class = "teampic">
+               <img src="https://d1119e2a-fffd-4b07-a392-bde93ea5d16b-00-2qq3rx42do6b5.janeway.replit.dev/static/profil.jpg" class="img-fluid" alt="team">
+              </div>
+              <div class = "member-info">
+                <h5>{{ alumni['Nama'] }}</h5>
+                <span>{{ alumni['Jabatan'] }}</span>
+                <p>
+                  {{ alumni['Perusahaan'] }}<br> 
+                  Angkatan: {{ alumni['Angkatan'] }}  
+                </p>
+
+              <div class = "profil">
+                <button class = "btn btn-primary btn-md">Profile</button>
+              </div>
+            </div> 
+            </div>              
+          </div>            
+        </div>          
+      </div>        
+    </div>
+  </div>
+  </div>
+    {% endfor %}
+</div>
