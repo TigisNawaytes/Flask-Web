@@ -40,5 +40,15 @@ def hello_world():
   return render_template("home.html", DataAlumni=DataAlumni)
 
 
+@app.route('/Database')
+def Database():
+  return render_template("database.html")
+
+
+@app.route('/Dashboard')
+def Dashboard():
+  return render_template("dashboard.html")
+
+
 if __name__ == '__main__':
   app.run(host='0.0.0.0', debug=True)
